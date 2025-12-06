@@ -24,3 +24,9 @@ variable "key_name" {
     type        = string
   
 }
+
+variable "security_group_ids" {
+    description = "List of security group IDs to associate with"
+    type        = list(string)
+  
+}
