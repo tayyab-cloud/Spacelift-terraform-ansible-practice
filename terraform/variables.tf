@@ -25,5 +25,4 @@ variable "instance_type" {
 variable "public_key_path" {
     description = "The path to the public key file"
     type        = string
-  
 }

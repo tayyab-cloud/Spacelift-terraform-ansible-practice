@@ -1,13 +1,9 @@
-resource "aws_key_pair" "deployer"{
-    key_name   = "${var.instance_name}-key"
-    public_key = var.public_key
-  
-}
+
 
 resource "aws_instance" "my-instance" {
     ami           = var.ami-id
     instance_type = var.instance-type
-    key_name      = aws_key_pair.deployer.key_name
+    key_name      = var.key_name
     vpc_security_group_ids = [aws_security_group.allow_ssh_http.id]
 
     
