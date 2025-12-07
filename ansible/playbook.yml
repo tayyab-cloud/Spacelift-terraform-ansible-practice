@@ -1,0 +1,25 @@
+---
+- name: Configure Web Servers
+  hosts: all
+  become: yes  
+  
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Start Nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Create a custom index.html 
+      copy:
+        content: "<h1>Hello from Spacelift + Ansible Automation!</h1>"
+        dest: /var/www/html/index.html
