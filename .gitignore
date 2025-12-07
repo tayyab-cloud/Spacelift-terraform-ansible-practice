@@ -23,6 +23,9 @@ ansible_key
 ansible_key.pub
 my_key
 my_key.pub
+ansible_key_pem
+ansible_key_pem.pub
+
 
 # 6. Ansible artifacts
 *.retry
