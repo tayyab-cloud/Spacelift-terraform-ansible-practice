@@ -18,6 +18,7 @@
         name: nginx
         state: started
         enabled: yes
+      when: not ansible_check_mode  
 
     - name: Create a custom index.html 
       copy:
