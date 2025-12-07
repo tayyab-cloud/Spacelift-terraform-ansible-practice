@@ -1,9 +1,9 @@
 # .gitignore
 
-# 1. Local .terraform directories (Ye engine ka kachra ha, push mat krna)
+# 1. Local .terraform directories (Local Terraform working directories — do not commit/push)
 **/.terraform/*
 
-# 2. Terraform State Files (Ye Spacelift sambhale ga, tum nahi)
+# 2. Terraform State Files (Terraform state files — managed by Spacelift; do not commit)
 *.tfstate
 *.tfstate.*
 
@@ -11,11 +11,11 @@
 crash.log
 *.log
 
-# 4. Sensitive Variables Files (GitHub pr password/keys nahi janay chahiyen)
+# 4. Sensitive Variables Files (Sensitive variable files — do not upload secrets or keys to GitHub)
 *.tfvars
 *.tfvars.json
 
-# 5. SSH Keys (SAB SE ZAROORI - Ye ghalti se b push na ho)
+# 5. SSH Keys (SSH private/public keys — DO NOT commit or push)
 *.pem
 id_rsa
 id_rsa.pub
@@ -27,6 +27,6 @@ my_key.pub
 # 6. Ansible artifacts
 *.retry
 
-# 7. OS generated files (Mac/Windows garbage)
+# 7. OS generated files (OS-generated files from macOS/Windows)
 .DS_Store
 Thumbs.db
