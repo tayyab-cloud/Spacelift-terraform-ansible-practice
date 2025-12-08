@@ -66,6 +66,8 @@ The Logic: Logs showing the custom Hook executing the Python script to parse RAW
 4. End-to-End Verification
 Final Result: Validation of the Nginx web server configuration on the provisioned EC2 instance IP.
 <img src="docs/images/img-4.png" alt="Nginx verification" />
+5. Architecture Diagram
+<img src="docs/images/img-5.png" alt="Architecture Diagram Flow" />
 
 How to Replicate
 Step 1: Clone the Repository
