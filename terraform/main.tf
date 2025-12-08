@@ -7,7 +7,7 @@ resource "aws_key_pair" "deployer"{
     public_key = file(var.public_key_path)
   
 }
-# Call the EC2 module to create multiple instances
+# Call the EC2 module to create multiple instances.
 module "ec2" {
     source         = "../modules/ec2"
     count = 4
