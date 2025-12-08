@@ -1,3 +1,4 @@
+# Test automation of multiple EC2 instances with Terraform and Ansible
 provider "aws" {
     region = var.region
 }
