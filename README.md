@@ -111,7 +111,10 @@ python3 -c "import os, json; print('\n'.join(json.loads(os.environ['SERVER_IPS']
 Step 4: Deploy
 Push a change to the main branch and watch the pipeline run automatically!
 
-Author
-Name: Tayyab Cloud
-LinkedIn: www.linkedin.com/in/tayyab-cloud-automation
-GitHub: https://github.com/tayyab-cloud
+---
+
+## Author
+
+- **Name:** Tayyab Cloud
+- **LinkedIn:** [https://www.linkedin.com/in/tayyab-cloud-automation]
+- **GitHub:** [https://github.com/tayyab-cloud]
