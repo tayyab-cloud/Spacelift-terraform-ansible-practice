@@ -9,9 +9,9 @@ resource "aws_key_pair" "deployer"{
 # Call the EC2 module to create multiple instances
 module "ec2" {
     source         = "../modules/ec2"
-    count = 3
+    count = 4
     ami-id         = var.ami_id
-    instance_name  = "${var.instance_name}-${count.index}"
+    instance_name  = "${var.instance_name}-${count.index + 1}"
     instance-type  = var.instance_type
     key_name       = aws_key_pair.deployer.key_name
     security_group_ids = [aws_security_group.allow_ssh_http.id]
