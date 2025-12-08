@@ -9,7 +9,7 @@ resource "aws_instance" "my-instance" {
 
     
     tags = {
-        Name = "MyInstance "
+        Name = var.instance_name
     }
   
 }
