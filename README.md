@@ -22,7 +22,7 @@ I have built an event-driven pipeline where a single `git push` triggers a chain
 
 ### 🏗 Architecture Flow
 
-```mermaid
+
 graph LR
     A[Developer] -- Git Push --> B[GitHub]
     B -- Webhook --> C[Spacelift]
@@ -56,18 +56,18 @@ Proof of Work
 Here is the visual evidence of the pipeline in action:
 1. Stack Dependency Visualization
 Visual representation of the orchestration flow within Spacelift, establishing terraform-infra as the upstream dependency passing state data to ansible-stack.
-<img src="docs/images/img-3.png" alt="Stack dependency visualization" />
+<img src="images/img-3.png" alt="Stack dependency visualization" />
 2. Automated Event-Driven Trigger
 Zero-Touch Automation: The run history confirms that the Ansible stack was automatically triggered via "Stack Dependency" immediately after Terraform finished applying.
-<img src="docs/images/img-1.png" alt="Spacelift run history" />
+<img src="images/img-1.png" alt="Spacelift run history" />
 3. Dynamic Inventory Logic via Hooks
 The Logic: Logs showing the custom Hook executing the Python script to parse RAW SERVER_IPS and generating the inventory.ini file securely.
-<img src="docs/images/img-2.png" alt="Dynamic inventory logs" />
+<img src="images/img-2.png" alt="Dynamic inventory logs" />
 4. End-to-End Verification
 Final Result: Validation of the Nginx web server configuration on the provisioned EC2 instance IP.
-<img src="docs/images/img-4.png" alt="Nginx verification" />
+<img src="images/img-4.png" alt="Nginx verification" />
 5. Architecture Diagram
-<img src="docs/images/img-5.png" alt="Architecture Diagram Flow" />
+<img src="images/img-5.png" alt="Architecture Diagram Flow" />
 
 How to Replicate
 Step 1: Clone the Repository
