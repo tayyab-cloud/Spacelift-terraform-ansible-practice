@@ -18,7 +18,7 @@ module "ec2" {
 
 }
 
-
+# Create a security group to allow SSH and HTTP access
 resource "aws_security_group" "allow_ssh_http" {
     name        = "${var.instance_name}-sg"
     description = "Allow SSH and HTTP inbound traffic"
