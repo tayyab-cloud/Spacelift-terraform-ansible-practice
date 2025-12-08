@@ -9,7 +9,7 @@ resource "aws_instance" "my-instance" {
 
     
     tags = {
-        Name = "MyInstance ${count.index + 1}"
+        Name = "MyInstance "
     }
   
 }
